@@ -23,10 +23,25 @@ function trim(str){
 function upperCase(str){
     return str.toUpperCase()
 }
-function validate(str){
-    if(str==" "){
-        return false
+// function validate(str){
+//     if(str.includes("@")){
+//         return true
+//     }else{
+//     return false
+//     }
+// }
+
+
+
+function final(...arg){
+    return function(x){
+        let result=x
+        for(let i=0;i<arg.length;i++){
+            result=arg[i](result)
+        }
+    return result
     }
-    return true
 }
 
+let res=final(trim,upperCase)
+console.log(res("sudhir@"))
