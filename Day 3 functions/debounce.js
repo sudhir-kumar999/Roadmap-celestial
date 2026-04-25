@@ -12,12 +12,12 @@ function debounce(callback,delay){
 
 }
 
-function test(){
-    console.log("test")
-}
-const btn=document.getElementById("btn")
-let debounced= debounce(test,2000)
-btn.addEventListener('click',debounced)
+// function test(){
+//     console.log("test")
+// }
+// const btn=document.getElementById("btn")
+// let debounced= debounce(test,2000)
+// btn.addEventListener('click',debounced)
 
 
 
@@ -56,9 +56,9 @@ function throttle(callback, delay){
 
 
 
-// function test(){
-//     console.log("test")
-// }
-// const btn=document.getElementById("btn")
-// let throt=throttle(test,4000)
-// btn.addEventListener('click',throt)
+function test(){
+    console.log("test")
+}
+const btn=document.getElementById("btn")
+let throt=throttle(test,1000)
+btn.addEventListener('click',throt)

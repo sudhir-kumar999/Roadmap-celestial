@@ -11,21 +11,21 @@
 
 //! manualy created a map function of array method 
 
-// function map(array,point){
-//     let result=[]
-//     for(let i=0;i<array.length;i++){
+function map(array,point){
+    let result=[]
+    for(let i=0;i<array.length;i++){
 
-//         result[i]=point(array[i])
-//     }
-//     return result
-// }
-// function callback(ele){
-//     return ele*3
-// }
-// let array=[2,3,4,5,6]
+        result[i]=point(array[i])
+    }
+    return result
+}
+function callback(ele){
+    return ele*3
+}
+let array=[2,3,4,5,6]
 
-// let res2=map(array,callback)
-// console.log(res2)
+let res2=map(array,callback)
+console.log(res2)
 
 
 
@@ -63,8 +63,8 @@
 //! manually making reduce method
 
 
-function reduce(array,callback){
-let result=0;
+function reduce(array,callback,acc){
+let result;
 
     let final
     for(let i=0;i<array.length;i++){
