@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@types/node": "^25.6.0"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2"
+  },
+  "name": "week-2-day-1-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/todo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
