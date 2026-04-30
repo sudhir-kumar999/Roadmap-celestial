@@ -19,7 +19,6 @@ function add() {
     // todoItems.push(obj)
     let result = fs.readFileSync("./src/todo.json", "utf-8");
     if (result.length != 0) {
-        // console.log(JSON.parse(result))
         let parseResult = JSON.parse(result);
         let newObj = [...parseResult, obj];
         fs.writeFileSync("./src/todo.json", JSON.stringify(newObj));
