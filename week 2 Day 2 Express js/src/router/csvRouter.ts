@@ -8,20 +8,20 @@ const router=express.Router()
 
 router.get("/data",(req,res,next)=>{
     try {
-        throw new Error("fake error")
-    //     let readStream=fs.createReadStream("/Users/sudhirkumar/Roadmap-celestial/week 2 Day 2 Express js/serverCSV.csv","utf-8")
-    //     let data=""
-    //     readStream.on("data",(chunk)=>{
-    //         // console.log(chunk)
-    //         data+=chunk
-    // })
+        // throw new Error("fake error")
+        let readStream=fs.createReadStream("/Users/sudhirkumar/Roadmap-celestial/week 2 Day 2 Express js/serverCSV.csv","utf-8")
+        let data=""
+        readStream.on("data",(chunk)=>{
+            // console.log(chunk)
+            data+=chunk
+    })
 
-    // readStream.on("end",()=>{
-    //     res.status(200).json({
-    //             chunk:data
-    //     })
-    //     console.log("data send successfully")
-    // })
+    readStream.on("end",()=>{
+        res.status(200).json({
+                chunk:data
+        })
+        console.log("data send successfully")
+    })
         
         // res.send("hello")
     } catch (error) {

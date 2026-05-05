@@ -38,6 +38,7 @@ const server = http.createServer((req, res) => {
             res.end("File uploaded successfully")
         })
     }
+    console.log("first")
 
     if (req.url === "/music" && req.method === "GET") {
 

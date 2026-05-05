@@ -23,16 +23,63 @@ function six(callback){
     callback()
 }
 
-one(()=>{
-    two(()=>{
-        three(()=>{
-            four(()=>{
-                five(()=>{
-                    six(()=>{
-                        console.log("done")
-                    })
-                })
-            })
-        })
+// one(()=>{
+//     two(()=>{
+//         three(()=>{
+//             four(()=>{
+//                 five(()=>{
+//                     six(()=>{
+//                         console.log("done")
+//                     })
+//                 })
+//             })
+//         })
+//     })
+// })
+
+function one(){
+    return new Promise((resolve,reject)=>{
+        resolve("one")
     })
+}
+function two(){
+    return new Promise((resolve,reject)=>{
+        resolve("two")
+    })
+}
+function three(){
+    return new Promise((resolve,reject)=>{
+        resolve("three")
+    })
+}
+function four(){
+    return new Promise((resolve,reject)=>{
+        resolve("four")
+    })
+}
+function five(){
+    return new Promise((resolve,reject)=>{
+        resolve("five")
+    })
+}
+
+one().then((data)=>{
+    console.log(data)
+    return two()
+}).then((data)=>{
+    console.log(data)
+    return three()
+
+}).then((data)=>{
+    console.log(data)
+    return four()
+
+}).then((data)=>{
+    console.log(data)
+   return five()
+
+}).then((data)=>{
+    console.log(data)
+}).catch((error)=>{
+console.log(error)
 })

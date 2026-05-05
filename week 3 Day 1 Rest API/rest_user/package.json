@@ -1,10 +1,10 @@
 {
-  "name": "stream_music",
+  "name": "rest_user",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "dev": "ts-node src/index.ts",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,14 +12,18 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.0",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.6",
     "@types/node": "^25.6.0",
-    "eslint": "^10.2.1",
-    "globals": "^17.5.0",
-    "typescript-eslint": "^8.59.1"
+    "i": "^0.3.7",
+    "nodemon": "^3.1.14",
+    "npm": "^11.13.0"
   }
 }

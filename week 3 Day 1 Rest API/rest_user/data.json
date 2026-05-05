@@ -1,0 +1,26 @@
+[
+    {
+        "name": "sudhir kumar",
+        "age": 25,
+        "email": "suuukk2001may@gmail.com",
+        "password": "$2b$10$/0FjunsQHEX4kwQ0qDWHSO/1bUZitD4SYDLelk51zBTjE2DNSHEgK",
+        "place": "Bihar",
+        "city": "hajipur"
+    },
+    {
+        "name": "sudhir kumar",
+        "age": 25,
+        "email": "sk2001may@gmail.com",
+        "password": "$2b$10$vfj0rSyovOayTpVxskBJeOpD/TOF5KLlPmX7RvpxYxZ7vpLCZIYSC",
+        "place": "Bihar",
+        "city": "hajipur"
+    },
+    {
+        "name": "sudhir kumar",
+        "age": 25,
+        "email": "sks2001may@gmail.com",
+        "password": "$2b$10$xNtHjrWD68EYYc.7FIPpUeUuEMUqk.QvzPHoJ.pxh9PeHeK7l/e3a",
+        "place": "Bihar",
+        "city": "hajipur"
+    }
+]
