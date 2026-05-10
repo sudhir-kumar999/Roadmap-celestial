@@ -1,3 +1,7 @@
 {
-    "cppbuild.isEnabled": false
+    "cppbuild.isEnabled": false,
+    "cSpell.words": [
+        "larg",
+        "nums"
+    ]
 }
